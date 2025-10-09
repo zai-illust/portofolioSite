@@ -124,15 +124,6 @@ header {
   width: calc(100% / 3);
 }
 
-/* mainのスタイル */
-main {
-  /* 配置 */
-  margin: 0 auto;
-
-  /* 形 */
-  max-width: 800px;
-}
-
 /* ギャラリーのスタイル ================= */
 
 .gallery .descliption {
