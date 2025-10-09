@@ -22,7 +22,14 @@
   --blue: #D2F6F8;
   color: var(--purple);
 
-  /* 文字 */
+  /* 文字サイズ */
+  --textBig: 2rem;
+  --textMiddle: 1.5rem;
+  --textBase: 16px;
+  --textSmall: 0.8rem;
+  font-size: var(--textBase);
+
+  /* フォント */
   --zenKaku: "Zen Kaku Gothic New";
   --zenMaru: "Zen Maru Gothic New";
   font-family: var(--zenMaru);
@@ -50,6 +57,18 @@ p {
   /* 配置 */
   margin: 0;
   padding: 0;
+}
+
+h2 {
+  font-size: var(--textBig);  
+}
+
+h3 {
+  font-size: var(--textMiddle);
+}
+
+p {
+  font-size: var(--textBase);
 }
 
 /* headerのスタイル ===================== */
