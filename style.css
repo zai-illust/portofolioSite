@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/* google fonts ========================= */
+.zen-kaku-gothic-new {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+}
+
+.zen-kaku-gothic-new-regular {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 共通で使うスタイルの定義 ============= */
+:root {
+  /* 色 */
+  --purple: #9747FF;
+  --gray: #EEEEEE;
+  --white: #FFFFFF;
+  --yellow: #E6F0AE;
+  --blue: #D2F6F8;
+  color: var(--purple);
+
+  /* 文字 */
+  --zenKaku: "Zen Kaku Gothic New";
+  --zenMaru: "Zen Maru Gothic New";
+  font-family: var(--zenMaru);
+
+  /* 配置 */
+  margin: 0px auto;
+  padding: 0px;
+}
+
+body {
+  margin: 0px auto;
+  margin-right: auto;
+  margin-left : auto;
+}
+
+/* headerのスタイル ===================== */
+header {
+  /* 配置 */
+  display: flex;
+  justify-content: space-between;
+  margin: 24px;
+  padding: 16px 32px;
+
+  /* 形 */
+  border-radius: 9999px;
+
+  /* 色 */
+  background-color: var(--gray);
+}
+
+/* toTopのスタイル ====================== */
+#toTop {
+  /* 配置 */
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+}
+
+/* ファーストビューのスタイル =========== */
+#firstView {
+  /* 配置 */
+  display: flex;
+  gap: 32px;
+
+  /* 形 */
+  height: 640px;
+}
+
+#firstView .snsLinks {
+  /* 配置 */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#firstView .snsLink {
+  /* 配置 */
+  display: block;
+
+  /* 形 */
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+
+  /* 色 */
+  background-color: var(--gray);
+}
+
+/* ファーストビューの中のスライドショーのスタイル */
+#slideShow {
+  /* 配置 */
+  position: relative;
+
+  /* 形 */
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+
+  /* 色 */
+  background-color: var(--gray);
+
+  /* 画像 */
+  background-image: url(images/slideShow/2025-10-07.jpg);
+  background-size: cover;
+}
+
+#firstView .logo {
+  /* 配置 */
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+
+  /* 形 */
+  width: calc(100% / 3);
+}
+
+/* mainのスタイル */
+main {
+  /* 形 */
+  max-width: 800px;
+}
+
+/* ギャラリーのスタイル ================= */
+
+.gallery .description {
+  /* 形 */
+  width: 320px;
+  border: 1px solid var(--purple);
+
+}
