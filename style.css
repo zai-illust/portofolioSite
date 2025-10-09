@@ -27,15 +27,20 @@
   --zenMaru: "Zen Maru Gothic New";
   font-family: var(--zenMaru);
 
+  /* 形 */
+  width: 100%;
+
   /* 配置 */
-  margin: 0px auto;
-  padding: 0px;
+  margin: 0 auto;
 }
 
 body {
-  margin: 0px auto;
-  margin-right: auto;
-  margin-left : auto;
+  /* 配置 */
+  margin: 0 auto;
+  padding: 0 32px;
+
+  /* 形 */
+  max-width: 800px;
 }
 
 /* headerのスタイル ===================== */
@@ -43,7 +48,7 @@ header {
   /* 配置 */
   display: flex;
   justify-content: space-between;
-  margin: 24px;
+  margin-top: 24px;
   padding: 16px 32px;
 
   /* 形 */
@@ -121,6 +126,9 @@ header {
 
 /* mainのスタイル */
 main {
+  /* 配置 */
+  margin: 0 auto;
+
   /* 形 */
   max-width: 800px;
 }
