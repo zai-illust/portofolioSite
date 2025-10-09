@@ -43,6 +43,15 @@ body {
   max-width: 800px;
 }
 
+/* 文字のスタイル */
+h2,
+h3,
+p {
+  /* 配置 */
+  margin: 0;
+  padding: 0;
+}
+
 /* headerのスタイル ===================== */
 header {
   /* 配置 */
@@ -127,6 +136,12 @@ header {
 /* ギャラリーのスタイル ================= */
 
 .gallery .descliption {
+  /* 配置 */
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 62px;
+
   /* 形 */
   width: 320px;
   border: 1px solid var(--purple);
