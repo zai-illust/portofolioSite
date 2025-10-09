@@ -22,12 +22,14 @@
   --blue: #D2F6F8;
   color: var(--purple);
 
-  /* 文字サイズ */
+  /* 文字 */
   --textBig: 2rem;
   --textMiddle: 1.5rem;
   --textBase: 16px;
   --textSmall: 0.8rem;
   font-size: var(--textBase);
+  line-height: 1.5;
+  letter-spacing: 0.08em;
 
   /* フォント */
   --zenKaku: "Zen Kaku Gothic New";
@@ -72,14 +74,22 @@ p {
 }
 
 /* headerのスタイル ===================== */
+header .wrapper {
+  width: 100%;
+  max-width: 800px;
+}
+
 header {
   /* 配置 */
   display: flex;
   justify-content: space-between;
   margin-top: 24px;
   padding: 16px 32px;
+  position: fixed;
+  z-index: 1;
 
   /* 形 */
+  width: 100%;
   border-radius: 9999px;
 
   /* 色 */
@@ -164,5 +174,20 @@ header {
   /* 形 */
   width: 320px;
   border: 1px solid var(--purple);
+}
 
+.gallery .illusts {
+  /* 配置 */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  /* 形 */
+  width: calc(100% / 5);
+  aspect-ratio: 1 / 1;
+  border-radius: 1rem;
+  
+  /* 色 */
+  background-color: var(--blue);
 }
