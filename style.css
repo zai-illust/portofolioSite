@@ -38,6 +38,7 @@
 
   /* 形 */
   width: 100%;
+  box-sizing: border-box;
 
   /* 配置 */
   margin: 0 auto;
@@ -74,23 +75,23 @@ p {
 }
 
 /* headerのスタイル ===================== */
-header .wrapper {
-  width: 100%;
-  max-width: 800px;
-}
-
 header {
   /* 配置 */
   display: flex;
   justify-content: space-between;
-  margin-top: 24px;
   padding: 16px 32px;
   position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  top: 24px;
+  left: 32px;
+  right: 32px;
   z-index: 1;
 
   /* 形 */
-  width: 100%;
+  max-width: 800px;
   border-radius: 9999px;
+  box-sizing: border-box;
 
   /* 色 */
   background-color: var(--gray);
@@ -174,6 +175,8 @@ header {
   /* 形 */
   width: 320px;
   border: 1px solid var(--purple);
+  box-sizing: border-box;
+
 }
 
 .gallery .illusts {
