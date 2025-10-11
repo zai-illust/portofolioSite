@@ -1,13 +1,14 @@
 @charset "utf-8";
 
 /* google fonts ========================= */
-.zen-kaku-gothic-new {
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 400;
-}
-
 .zen-kaku-gothic-new-regular {
   font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zen-maru-gothic-regular {
+  font-family: "Zen Maru Gothic", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -33,7 +34,7 @@
 
   /* フォント */
   --zenKaku: "Zen Kaku Gothic New";
-  --zenMaru: "Zen Maru Gothic New";
+  --zenMaru: "Zen Maru Gothic";
   font-family: var(--zenMaru);
 
   /* 形 */
@@ -63,7 +64,7 @@ p {
 }
 
 h2 {
-  font-size: var(--textBig);  
+  font-size: var(--textBig);
 }
 
 h3 {
