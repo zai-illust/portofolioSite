@@ -54,6 +54,17 @@ body {
   max-width: 800px;
 }
 
+/* ホバーのスタイル */
+.hover {
+  /* 動き */
+  transition: all .1s;
+}
+
+.hover:hover {
+  /* 動き */
+  transform: scale(1.1, 1.1);
+}
+
 /* 文字のスタイル */
 h2,
 h3,
