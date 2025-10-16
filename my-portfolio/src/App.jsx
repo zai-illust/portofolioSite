@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <header className="flex">
-        <img src="/images/parts/logo.svg" className="hover" alt="logo" />
+        <img src="assets/images/parts/logo.svg" className="hover" alt="logo" />
 
         <nav>
           <a href="">ORIGINAL</a>
@@ -19,7 +19,7 @@ function App() {
       </header>
 
       <nav id="toTop">
-        <img src="/images/parts/TOP.svg" alt="to top" />
+        <img src="assets/images/parts/TOP.svg" alt="to top" />
       </nav>
 
       <section id="firstView">
@@ -32,7 +32,7 @@ function App() {
         </div>
 
         <div id="slideShow">
-          <img src="/images/parts/logo.svg" className="logo" alt="logo" />
+          <img src="assets/images/parts/logo.svg" className="logo" alt="logo" />
         </div>
       </section>
 
@@ -49,7 +49,7 @@ function App() {
               </p>
             </div>
 
-            <img src="/images/original/2025-09-29-1.jpg" className="eyechatch" alt="eyechatch" />
+            <img src="assets/images/original/2025-09-29-1.jpg" className="eyechatch" alt="eyechatch" />
           </div>
 
           <div className="illusts">
