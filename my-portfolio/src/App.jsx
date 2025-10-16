@@ -8,28 +8,59 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header className="flex">
+        <img src="/images/parts/logo.svg" className="hover" alt="logo" />
+
+        <nav>
+          <a href="">ORIGINAL</a>
+          <a href="">FAN ART</a>
+          <a href="">COMMISSION</a>
+        </nav>
+      </header>
+
+      <nav id="toTop">
+        <img src="/images/parts/TOP.svg" alt="to top" />
+      </nav>
+
+      <section id="firstView">
+        <div id="sns">
+          <h2>SNS LINKS:</h2>
+          <div className="snsLinks">
+            <a href="https://bsky.app/profile/zaiillust.bsky.social" target="_blank" className="snsLink hover"></a>
+            {/* 他のSNSリンクもここに */}
+          </div>
+        </div>
+
+        <div id="slideShow">
+          <img src="/images/parts/logo.svg" className="logo" alt="logo" />
+        </div>
+      </section>
+
+      <main>
+        <h2>GALLERY</h2>
+
+        <section id="original" className="gallery">
+          <div className="container">
+            <div className="descliption">
+              <h3>一次創作</h3>
+              <p>
+                手癖で描いてます。服を考えるのが好きです。<br />
+                うちよそもやってます。
+              </p>
+            </div>
+
+            <img src="/images/original/2025-09-29-1.jpg" className="eyechatch" alt="eyechatch" />
+          </div>
+
+          <div className="illusts">
+            {Array.from({ length: 10 }).map((_, i) => (
+              <img key={i} src="" className="square hover" alt={`illust-${i}`} />
+            ))}
+          </div>
+        </section>
+      </main>
     </>
-  )
+  );
 }
 
 export default App
