@@ -3,21 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import SlideShow from "./components/SlideShow";
+import Header from "./components/Header";
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <header className="flex">
-        <img src="assets/images/parts/logo.svg" className="hover" alt="logo" />
-
-        <nav>
-          <a href="">ORIGINAL</a>
-          <a href="">FAN ART</a>
-          <a href="">COMMISSION</a>
-        </nav>
-      </header>
+      <Header />
 
       <nav id="toTop">
         <img src="assets/images/parts/TOP.svg" alt="to top" />
