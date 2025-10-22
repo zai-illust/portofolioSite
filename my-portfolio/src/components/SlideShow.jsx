@@ -1,5 +1,24 @@
 import React, { useState, useEffect } from "react";
+import styled from "styled-components";
 
+// スライドショーのラッパー
+const SlideShowWrapper = styled.div`
+  position: relative;
+  width: 100%;
+  height: 640px;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+`;
+
+// ロゴのスタイル
+const Logo = styled.img`
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  width: 33%;
+`;
 
 /**
  * 4秒毎に画像が切り替わるスライドショーを表示するコンポーネント
@@ -31,31 +50,8 @@ export default function SlideShow() {
 
   // 画面に表示される部分
   return (
-    <div
-      id="slideShow"
-      style={{
-        position: "relative",
-        width: "100%",
-        height: "640px",
-        borderRadius: "16px",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundImage: `url(${imageArray[currentIndex]})`,
-        transition: "background-image 1s ease-in-out",
-      }}
-    >
-      {/* ロゴ */}
-      <img
-        src="/src/assets/images/parts/logo.svg"
-        alt="logo"
-        className="logo"
-        style={{
-          position: "absolute",
-          bottom: "32px",
-          right: "32px",
-          width: "33%",
-        }}
-      />
-    </div>
+    <SlideShowWrapper style={{ backgroundImage: `url(${imageArray[currentIndex]})` }}>
+      <Logo src="/src/assets/images/parts/logo.svg" alt="logo" />
+    </SlideShowWrapper>
   );
 }
