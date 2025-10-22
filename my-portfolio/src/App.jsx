@@ -2,8 +2,11 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+
+// components
 import SlideShow from "./components/SlideShow";
 import Header from "./components/Header";
+import PageTopButton from "./components/PageTopButton";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,9 +15,7 @@ function App() {
     <>
       <Header />
 
-      <nav id="toTop">
-        <img src="assets/images/parts/TOP.svg" alt="to top" />
-      </nav>
+      <PageTopButton />
 
       <section id="firstView">
         <div id="sns">
@@ -25,7 +26,7 @@ function App() {
           </div>
         </div>
 
-      <SlideShow />
+        <SlideShow />
       </section>
 
       <main>
