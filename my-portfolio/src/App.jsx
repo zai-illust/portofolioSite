@@ -8,6 +8,7 @@ import SlideShow from "./components/SlideShow";
 import Header from "./components/Header";
 import PageTopButton from "./components/PageTopButton";
 import SNSLinkButton from "./components/SNSLinkButton";
+import ThumbnailGrid from "./components/ThumbnailGrid";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -45,11 +46,7 @@ function App() {
             <img src="assets/images/original/2025-09-29-1.jpg" className="eyechatch" alt="eyechatch" />
           </div>
 
-          <div className="illusts">
-            {Array.from({ length: 10 }).map((_, i) => (
-              <img key={i} src="" className="square hover" alt={`illust-${i}`} />
-            ))}
-          </div>
+          <ThumbnailGrid />
         </section>
       </main>
     </>
