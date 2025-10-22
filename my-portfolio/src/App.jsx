@@ -7,6 +7,7 @@ import './App.css'
 import SlideShow from "./components/SlideShow";
 import Header from "./components/Header";
 import PageTopButton from "./components/PageTopButton";
+import SNSLinkButton from "./components/SNSLinkButton";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,8 +22,7 @@ function App() {
         <div id="sns">
           <h2>SNS LINKS:</h2>
           <div className="snsLinks">
-            <a href="https://bsky.app/profile/zaiillust.bsky.social" target="_blank" className="snsLink hover"></a>
-            {/* 他のSNSリンクもここに */}
+            <SNSLinkButton />
           </div>
         </div>
 
