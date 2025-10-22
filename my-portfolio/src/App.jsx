@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import SlideShow from "./components/SlideShow";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -31,9 +32,7 @@ function App() {
           </div>
         </div>
 
-        <div id="slideShow">
-          <img src="assets/images/parts/logo.svg" className="logo" alt="logo" />
-        </div>
+      <SlideShow />
       </section>
 
       <main>
